@@ -3,16 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Categories, PostCard, PostWidget } from '../components'
 import { getPosts } from '../services'
-// const posts = [
-//   {
-//     title: 'React',
-//     excerpt: 'React is a JavaScript library for building user interfaces.',
-//   },
-//   {
-//     title: 'Next.js',
-//     excerpt: 'Next.js is a framework for server-rendered React applications.',
-//   },
-// ]
 
 const Home: NextPage = ({ posts }: any) => {
   return (
