@@ -6,8 +6,8 @@ const CommentsForm = ({ slug }: any) => {
   const [localStorage, setLocalStorage] = useState(null)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
   const commentEl = useRef(null)
-  const nameEl = useRef(null)
-  const emailEl = useRef(null)
+  const nameEl: any = useRef(null)
+  const emailEl: any = useRef(null)
   const storeDataEl = useRef(null)
 
   useEffect(() => {
