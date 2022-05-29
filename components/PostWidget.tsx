@@ -7,7 +7,7 @@ const PostWidget = ({ slug, categories }: any) => {
   const [relatedPosts, setRelatedPosts] = useState([])
   useEffect(() => {
     if (slug) {
-      getSimilarPosts(categories, slug).then((result) =>
+      getSimilarPosts(slug, categories).then((result) =>
         setRelatedPosts(result)
       )
     } else {
@@ -26,8 +26,8 @@ const PostWidget = ({ slug, categories }: any) => {
             <img
               src={post.image.url}
               alt={post.title}
-              height="60px"
-              width="60px"
+              width="80px"
+              height="80px"
               className="rounded-full align-bottom"
             />
           </div>
